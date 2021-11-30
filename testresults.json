@@ -6,8 +6,8 @@
 	"tests": 0,
 	"assertions": 2,
 	"errmessages": [
-		"\u001b[0;31m  NoSuchElementError: An error occurred while running .click() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m",
-		"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
+		"\u001b[0;31m  NoSuchElementError: An error occurred while running .click() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"a1973c079c3cb6be6687fbca85655a11\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m",
+		"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"a1973c079c3cb6be6687fbca85655a11\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
 	],
 	"modules": {
 		"amazon.item.count": {
@@ -21,10 +21,10 @@
 				"stack": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
 			},
 			"skipped": [],
-			"time": "22.49",
+			"time": "47.90",
 			"completed": {
 				"Amazon Search": {
-					"time": "22.49",
+					"time": "47.90",
 					"assertions": [
 						{
 							"message": "Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
@@ -33,9 +33,9 @@
 							"failure": "Expected \"contains text 'Books'\" but got: \"element could not be located\""
 						},
 						{
-							"message": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+							"message": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(79ms)\u001b[0m",
 							"stackTrace": "",
-							"fullMsg": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+							"fullMsg": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(79ms)\u001b[0m",
 							"failure": false
 						}
 					],
@@ -48,7 +48,7 @@
 					"stackTrace": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
 					"testcases": {
 						"Amazon Search": {
-							"time": "22.49",
+							"time": "47.90",
 							"assertions": [
 								{
 									"message": "Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
@@ -57,9 +57,9 @@
 									"failure": "Expected \"contains text 'Books'\" but got: \"element could not be located\""
 								},
 								{
-									"message": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+									"message": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(79ms)\u001b[0m",
 									"stackTrace": "",
-									"fullMsg": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+									"fullMsg": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(79ms)\u001b[0m",
 									"failure": false
 								}
 							],
@@ -77,7 +77,7 @@
 								"abortOnFailure": false,
 								"stack": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
 							},
-							"timeMs": 22494
+							"timeMs": 47897
 						}
 					},
 					"lastError": {
@@ -87,12 +87,12 @@
 						"abortOnFailure": false,
 						"stack": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
 					},
-					"timeMs": 22494
+					"timeMs": 47897
 				}
 			},
 			"errmessages": [
-				"\u001b[0;31m  NoSuchElementError: An error occurred while running .click() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m",
-				"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
+				"\u001b[0;31m  NoSuchElementError: An error occurred while running .click() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"a1973c079c3cb6be6687fbca85655a11\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m",
+				"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"a1973c079c3cb6be6687fbca85655a11\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
 			],
 			"testsCount": 1,
 			"skippedCount": 0,

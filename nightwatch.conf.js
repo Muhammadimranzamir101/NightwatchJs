@@ -28,8 +28,9 @@ module.exports = {
             },
             webdriver: {
                 start_process: true,
-                port: 4444,
-                server_path: require('chromedriver').path,
+                port: 9515,
+                server_path : "node_modules/.bin/chromedriver"
+                //server_path: require('chromedriver').path,
             }
         },
 
@@ -44,7 +45,7 @@ module.exports = {
                 acceptSslCerts: true,
                 // cli_args: {
                 //     webdriver.edge.driver: "bin/MicrosoftWebDriver.exe"
-                    
+
                 // }
             },
             webdriver: {
@@ -57,11 +58,11 @@ module.exports = {
 
         firefox: {
             desiredCapabilities : {
-                browserName : "firefox", 
+                browserName : "firefox",
                 alwaysMatch: {
                   firefoxOptions: {
                       args: [ "-headless" ]
-                  }                    
+                  }
               }
            },
 

@@ -16,13 +16,10 @@
         "default": {
             "desiredCapabilities": {
                 "browserName": "chrome",
-                "chromeOptions": {
-                "args": ["headless","no-sandbox","disable-gpu"]
-                }
             },
             "webdriver": {
                 "start_process": true,
-                "port": 4444,
+                "port": 4041,
                 "server_path": "node_modules/.bin/chromedriver"
             }
         },
@@ -32,14 +29,7 @@
         },
         "firefox": {
             "desiredCapabilities": {
-                "browserName": "firefox",
-                "alwaysMatch": {
-                    "moz:firefoxOptions": {
-                        "args": [
-                            "-headless"
-                        ]
-                    }
-                }
+                "browserName": "firefox"
             },
             "webdriver": {
                 "start_process": true,

@@ -5,9 +5,9 @@
 
   <testsuite name="amazon.item.count"
     errors="2" failures="1" hostname="" id="" package="amazon.item.count" skipped="0"
-    tests="1" time="22.49" timestamp="">
+    tests="1" time="47.90" timestamp="">
   
-    <testcase name="Amazon Search" classname="amazon.item.count" time="22.49" assertions="2">  <failure message="Testing if element &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt; contains text &#39;Books&#39; in 5000ms - expected &#34;contains text &#39;Books&#39;&#34; but got: &#34;element could not be located&#34; (5105ms)">    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)
+    <testcase name="Amazon Search" classname="amazon.item.count" time="47.90" assertions="2">  <failure message="Testing if element &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt; contains text &#39;Books&#39; in 5000ms - expected &#34;contains text &#39;Books&#39;&#34; but got: &#34;element could not be located&#34; (5105ms)">    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
 
     
@@ -24,11 +24,11 @@
   
     <system-err>
         NoSuchElementError: An error occurred while running .click() command on &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt;: 
-   {&#34;sessionId&#34;:&#34;1c57d543aaed252b8f028399bf9efcc2&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+   {&#34;sessionId&#34;:&#34;a1973c079c3cb6be6687fbca85655a11&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
        at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)
        at processTicksAndRejections (internal/process/task_queues.js:95:5)
   NoSuchElementError: An error occurred while running .getText() command on &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt;: 
-   {&#34;sessionId&#34;:&#34;1c57d543aaed252b8f028399bf9efcc2&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+   {&#34;sessionId&#34;:&#34;a1973c079c3cb6be6687fbca85655a11&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
        at processTicksAndRejections (internal/process/task_queues.js:95:5)
     </system-err>
   
