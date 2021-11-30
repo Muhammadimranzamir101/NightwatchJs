@@ -1,0 +1,72 @@
+{
+	"passed": 0,
+	"failed": 0,
+	"errors": 1,
+	"skipped": 0,
+	"tests": 0,
+	"assertions": 0,
+	"errmessages": [
+		"\u001b[0;31m  TypeError: Cannot read property 'api' of undefined\u001b[0m\n\u001b[0;90m       at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
+	],
+	"modules": {
+		"dropdown": {
+			"reportPrefix": "CHROME_92.0.4515.159_Windows_",
+			"assertionsCount": 0,
+			"lastError": {
+				"name": "TypeError"
+			},
+			"skipped": [],
+			"time": "9.463",
+			"completed": {
+				"Dropdown menu": {
+					"time": "9.463",
+					"assertions": [],
+					"passed": 0,
+					"errors": 1,
+					"failed": 0,
+					"skipped": 0,
+					"tests": 0,
+					"steps": [],
+					"stackTrace": "TypeError: Cannot read property 'api' of undefined\n    at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n    at Context.call (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\context.js:376:35)\n    at TestCase.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\testcase.js:58:31)\n    at Runnable.__runFn (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:80)\n    at Runnable.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\runnable.js:123:21)\n    at TestSuite.createRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:496:33)\n    at TestSuite.handleRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:501:18)\n    at C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:21\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async DefaultRunner.runTestSuite (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\runner\\test-runners\\default.js:68:7)",
+					"testcases": {
+						"Dropdown menu": {
+							"time": "9.463",
+							"assertions": [],
+							"tests": 0,
+							"passed": 0,
+							"errors": 1,
+							"failed": 0,
+							"skipped": 0,
+							"steps": [],
+							"stackTrace": "TypeError: Cannot read property 'api' of undefined\n    at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n    at Context.call (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\context.js:376:35)\n    at TestCase.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\testcase.js:58:31)\n    at Runnable.__runFn (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:80)\n    at Runnable.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\runnable.js:123:21)\n    at TestSuite.createRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:496:33)\n    at TestSuite.handleRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:501:18)\n    at C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:21\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async DefaultRunner.runTestSuite (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\runner\\test-runners\\default.js:68:7)",
+							"lastError": {
+								"name": "TypeError"
+							},
+							"timeMs": 9463
+						}
+					},
+					"lastError": {
+						"name": "TypeError"
+					},
+					"timeMs": 9463
+				}
+			},
+			"errmessages": [
+				"\u001b[0;31m  TypeError: Cannot read property 'api' of undefined\u001b[0m\n\u001b[0;90m       at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
+			],
+			"testsCount": 1,
+			"skippedCount": 0,
+			"failedCount": 0,
+			"errorsCount": 1,
+			"passedCount": 0,
+			"group": "",
+			"modulePath": "C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js",
+			"tests": 1,
+			"failures": 0,
+			"errors": 1
+		}
+	},
+	"lastError": {
+		"name": "TypeError"
+	}
+}

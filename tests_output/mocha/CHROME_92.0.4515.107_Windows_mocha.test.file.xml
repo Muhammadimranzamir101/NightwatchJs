@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="mocha.mocha.test.file"
+    errors="0" failures="1" hostname="" id="" package="tests_mocha" skipped="0"
+    tests="1" time="38.33" timestamp="">
+  
+    <testcase name="should be filled out successfully" classname="mocha.mocha.test.file" time="38.33" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Expected element &lt;#et_pb_contact_form_0&gt; text to equal: &#34;Please refresh the page and try again.&#34; - expected &#34;equal &#39;Please refresh the page and try again.&#39;&#34; but got: &#34;Please refresh the page and try again.
+this is a paragraph
+Submit&#34; (5020ms)">    at DescribeInstance.&lt;anonymous&gt; (C:\Users\mimran\Desktop\VS Code\Nightwatch-js\tests_mocha\mocha.test.file.js:13:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,24 @@
+{
+  "name": "nightwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "chromedriver": "^92.0.1",
+    "geckodriver": "^2.0.2",
+    "html-dnd": "^1.2.1",
+    "nightwatch": "^1.7.8"
+  },
+  "devDependencies": {
+    "selenium": "^2.20.0",
+    "server": "^1.0.35"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}

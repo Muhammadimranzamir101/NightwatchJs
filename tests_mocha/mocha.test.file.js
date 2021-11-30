@@ -1,0 +1,21 @@
+describe('Filling out Form using Mocha test runner', ()=>{
+    it('should be filled out successfully', (client)=>{
+        client
+        //@ts-ignore
+        .url('https://www.ultimateqa.com/filling-out-forms')
+        .waitForElementVisible('body',1000)
+        .assert.title('Filling Out Forms - Ultimate QA')
+        .waitForElementVisible('#et_pb_contact_name_0')
+        .setValue('#et_pb_contact_name_0','Dimitri')
+        .setValue('#et_pb_contact_message_0','this is a paragraph')
+        .click('.et_pb_contact_submit')
+        .waitForElementVisible('#et_pb_contact_form_0')
+        .expect.element('#et_pb_contact_form_0').text.to.equal('Please refresh the page and try again.');
+    })
+
+    after((client,done)=>{
+        client.end(()=>{
+            done();
+        });
+    });
+});
