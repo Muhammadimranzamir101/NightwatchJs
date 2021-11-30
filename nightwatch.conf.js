@@ -56,21 +56,21 @@ module.exports = {
             }
         },
 
-        firefox: {
-            desiredCapabilities : {
-                browserName : "firefox",
-                alwaysMatch: {
-                  firefoxOptions: {
-                      args: [ "-headless" ]
-                  }
-              }
-           },
-
-            webdriver: {
-                start_process: true,
-                port: 4446,
-                server_path: require('geckodriver').path
-            }
-        }
+        // firefox: {
+        //     desiredCapabilities : {
+        //         browserName : "firefox",
+        //         alwaysMatch: {
+        //           firefoxOptions: {
+        //               args: [ "-headless" ]
+        //           }
+        //       }
+        //    },
+        //
+        //     webdriver: {
+        //         start_process: true,
+        //         port: 4446,
+        //         server_path: require('geckodriver').path
+        //     }
+        // }
     }
 }
