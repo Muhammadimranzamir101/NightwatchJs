@@ -23,7 +23,7 @@
             "webdriver": {
                 "start_process": true,
                 "port": 4444,
-                "server_path": "node_modules/chromedriver/lib/chromedriver/chromedriver.exe"
+                "server_path": "node_modules/.bin/chromedriver"
             }
         },
         "test_workers": {
@@ -55,7 +55,7 @@
                     "acceptSslCerts": true
                 }
             },
-           
+
             "webdriver": {
                 "start_process": true,
                 "port": 9516,

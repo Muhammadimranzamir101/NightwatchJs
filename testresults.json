@@ -1,72 +1,116 @@
 {
-	"passed": 0,
-	"failed": 0,
-	"errors": 1,
+	"passed": 1,
+	"failed": 1,
+	"errors": 2,
 	"skipped": 0,
 	"tests": 0,
-	"assertions": 0,
+	"assertions": 2,
 	"errmessages": [
-		"\u001b[0;31m  TypeError: Cannot read property 'api' of undefined\u001b[0m\n\u001b[0;90m       at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
+		"\u001b[0;31m  NoSuchElementError: An error occurred while running .click() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m",
+		"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
 	],
 	"modules": {
-		"dropdown": {
-			"reportPrefix": "CHROME_92.0.4515.159_Windows_",
-			"assertionsCount": 0,
+		"amazon.item.count": {
+			"reportPrefix": "CHROME_96.0.4664.55_Mac_OS_X_",
+			"assertionsCount": 2,
 			"lastError": {
-				"name": "TypeError"
+				"name": "NightwatchAssertError",
+				"message": "Error while running \"containsText\" command: Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+				"showDiff": false,
+				"abortOnFailure": false,
+				"stack": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
 			},
 			"skipped": [],
-			"time": "9.463",
+			"time": "22.49",
 			"completed": {
-				"Dropdown menu": {
-					"time": "9.463",
-					"assertions": [],
-					"passed": 0,
-					"errors": 1,
-					"failed": 0,
+				"Amazon Search": {
+					"time": "22.49",
+					"assertions": [
+						{
+							"message": "Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+							"stackTrace": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+							"fullMsg": "Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+							"failure": "Expected \"contains text 'Books'\" but got: \"element could not be located\""
+						},
+						{
+							"message": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+							"stackTrace": "",
+							"fullMsg": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+							"failure": false
+						}
+					],
+					"passed": 1,
+					"errors": 2,
+					"failed": 1,
 					"skipped": 0,
-					"tests": 0,
+					"tests": 2,
 					"steps": [],
-					"stackTrace": "TypeError: Cannot read property 'api' of undefined\n    at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n    at Context.call (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\context.js:376:35)\n    at TestCase.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\testcase.js:58:31)\n    at Runnable.__runFn (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:80)\n    at Runnable.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\runnable.js:123:21)\n    at TestSuite.createRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:496:33)\n    at TestSuite.handleRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:501:18)\n    at C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:21\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async DefaultRunner.runTestSuite (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\runner\\test-runners\\default.js:68:7)",
+					"stackTrace": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
 					"testcases": {
-						"Dropdown menu": {
-							"time": "9.463",
-							"assertions": [],
-							"tests": 0,
-							"passed": 0,
-							"errors": 1,
-							"failed": 0,
+						"Amazon Search": {
+							"time": "22.49",
+							"assertions": [
+								{
+									"message": "Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+									"stackTrace": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+									"fullMsg": "Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+									"failure": "Expected \"contains text 'Books'\" but got: \"element could not be located\""
+								},
+								{
+									"message": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+									"stackTrace": "",
+									"fullMsg": "Testing if element \u001b[0;33m<div.sg-col-inner  > .a-spacing-top-small > span[dir='auto']:nth-child(1)>\u001b[0m contains text \u001b[0;33m'result'\u001b[0m \u001b[0;90m(60ms)\u001b[0m",
+									"failure": false
+								}
+							],
+							"tests": 2,
+							"passed": 1,
+							"errors": 2,
+							"failed": 1,
 							"skipped": 0,
 							"steps": [],
-							"stackTrace": "TypeError: Cannot read property 'api' of undefined\n    at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n    at Context.call (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\context.js:376:35)\n    at TestCase.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\testcase.js:58:31)\n    at Runnable.__runFn (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:80)\n    at Runnable.run (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\runnable.js:123:21)\n    at TestSuite.createRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:496:33)\n    at TestSuite.handleRunnable (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:501:18)\n    at C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\testsuite\\index.js:384:21\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async DefaultRunner.runTestSuite (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\node_modules\\nightwatch\\lib\\runner\\test-runners\\default.js:68:7)",
+							"stackTrace": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
 							"lastError": {
-								"name": "TypeError"
+								"name": "NightwatchAssertError",
+								"message": "Error while running \"containsText\" command: Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+								"showDiff": false,
+								"abortOnFailure": false,
+								"stack": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
 							},
-							"timeMs": 9463
+							"timeMs": 22494
 						}
 					},
 					"lastError": {
-						"name": "TypeError"
+						"name": "NightwatchAssertError",
+						"message": "Error while running \"containsText\" command: Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+						"showDiff": false,
+						"abortOnFailure": false,
+						"stack": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
 					},
-					"timeMs": 9463
+					"timeMs": 22494
 				}
 			},
 			"errmessages": [
-				"\u001b[0;31m  TypeError: Cannot read property 'api' of undefined\u001b[0m\n\u001b[0;90m       at Object.Dropdown menu (C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js:10:18)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
+				"\u001b[0;31m  NoSuchElementError: An error occurred while running .click() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)\n       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m",
+				"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <option[value='search-alias=stripbooks']>: \n   {\"sessionId\":\"1c57d543aaed252b8f028399bf9efcc2\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:95:5)\u001b[0m"
 			],
 			"testsCount": 1,
 			"skippedCount": 0,
-			"failedCount": 0,
-			"errorsCount": 1,
-			"passedCount": 0,
+			"failedCount": 1,
+			"errorsCount": 2,
+			"passedCount": 1,
 			"group": "",
-			"modulePath": "C:\\Users\\mimran\\Desktop\\VSCode\\Nightwatch-js\\tests\\dropdown.js",
+			"modulePath": "/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js",
 			"tests": 1,
-			"failures": 0,
-			"errors": 1
+			"failures": 1,
+			"errors": 2
 		}
 	},
 	"lastError": {
-		"name": "TypeError"
+		"name": "NightwatchAssertError",
+		"message": "Error while running \"containsText\" command: Testing if element \u001b[0;33m<option[value='search-alias=stripbooks']>\u001b[0m contains text \u001b[0;33m'Books'\u001b[0m in 5000ms - expected \u001b[0;32m\"contains text 'Books'\"\u001b[0m but got: \u001b[0;31m\"element could not be located\"\u001b[0m \u001b[0;90m(5105ms)\u001b[0m",
+		"showDiff": false,
+		"abortOnFailure": false,
+		"stack": "    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
 	}
 }

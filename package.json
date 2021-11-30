@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "chromedriver": "^92.0.1",
+    "chromedriver": "^96.0.0",
     "geckodriver": "^2.0.2",
     "html-dnd": "^1.2.1",
     "nightwatch": "^1.7.8"
@@ -17,7 +17,7 @@
     "server": "^1.0.35"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "nightwatch tests"
   },
   "author": "",
   "license": "ISC"
