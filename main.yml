@@ -1,0 +1,21 @@
+stages:
+  - lint-test
+
+.node env: &node_env
+  image: node:10.16.3
+  cache:
+    paths:
+      - node_modules/
+  only:
+    refs:
+      - merge_requests
+    changes:
+      - .gitlab-ci.yml
+      - src/**/*
+  before_script:
+    - "npm install"
+
+eslint:
+  <<: *node_env
+  stage: lint-test
+  script: "npm run lint"
