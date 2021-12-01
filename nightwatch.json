@@ -31,8 +31,8 @@
       },
       "webdriver": {
         "start_process": true,
-        "port": 4041,
-        "server_path": "node_modules/chromedriver/lib/chromedriver/chromedriver"
+        "port": 4041
+
       }
     },
     "chrome": {
