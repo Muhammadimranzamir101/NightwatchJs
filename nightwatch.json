@@ -1,56 +1,40 @@
 
 {
-    "src_folders": ["tests"],
-    "globals_path": "globals/global_module.js",
-    "skip_testcases_on_fail": false,
-    "page_objects_path": [
-        "pages"
-    ],
-    "screenshots": {
-        "enabled": true,
-        "path": "./screenshots",
-        "on_failure": true,
-        "on_error": true
-    },
-    "test_settings": {
-        "default": {
-            "desiredCapabilities": {
-                "browserName": "chrome"
-            },
-            "webdriver": {
-                "start_process": true,
-                "port": 4041,
-                "server_path": "node_modules/chromedriver/lib/chromedriver/chromedriver"
-            }
-        },
-        "test_workers": {
-            "enabled": true,
-            "workers": "auto"
-        },
-        "firefox": {
-            "desiredCapabilities": {
-                "browserName": "firefox"
-            },
-            "webdriver": {
-                "start_process": true,
-                "port": 4446,
-                "server_path": "./node_modules/geckodriver/geckodriver.exe"
-            }
-        },
-        "selenium": {
-            "default" : {
-                "desiredCapabilities": {
-                    "browserName": "MicrosoftEdge",
-                    "marionette": true,
-                    "acceptSslCerts": true
-                }
-            },
+  "src_folders": ["tests"],
+  "globals_path": "globals/global_module.js",
+  "skip_testcases_on_fail": false,
+  "page_objects_path": [
+    "pages"
+  ],
 
-            "webdriver": {
-                "start_process": true,
-                "port": 9516,
-                "server_path": "./node_modules/selenium/lib/runner/selenium-server-standalone-2.20.0.jar"
-            }
+  "test_settings" : {
+    "default": {
+      "launch_url": "http://localhost:3000",
+      "selenium_host": "127.0.0.1",
+      "selenium_port": 4444,
+      "silent": true,
+      "disable_colors": false,
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "on_error": true,
+        "path": "./screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "args": [
+            "start-fullscreen"
+          ]
         }
+      }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
     }
+  }
 }
