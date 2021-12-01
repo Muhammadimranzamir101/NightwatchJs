@@ -9,7 +9,6 @@
   "dependencies": {
     "@cucumber/cucumber": "^7.3.0",
     "axios": "^0.21.1",
-    "chromedriver": "^96.0.0",
     "cucumber": ">=6.0.5",
     "cucumber-pretty": "^6.0.0",
     "geckodriver": "^2.0.2",
@@ -19,11 +18,12 @@
     "selenium-server": "^3.141.59"
   },
   "devDependencies": {
+    "chromedriver": "^96.0.0",
     "selenium": "^2.20.0",
     "server": "^1.0.35"
   },
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch"
+    "test": "./node_modules/.bin/nightwatch tests"
   },
   "author": "",
   "license": "ISC"
