@@ -21,12 +21,7 @@
       },
       "desiredCapabilities": {
         "browserName": "chrome",
-        "start_process": true,
-        "chromeOptions": {
-          "args": [
-            "start-fullscreen"
-          ]
-        }
+        "start_process": true
       },
       "webdriver": {
         "start_process": true,
