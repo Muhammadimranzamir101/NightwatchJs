@@ -23,7 +23,7 @@
     "server": "^1.0.35"
   },
   "scripts": {
-    "test": "nightwatch tests"
+    "test": "./node_modules/.bin/nightwatch"
   },
   "author": "",
   "license": "ISC"

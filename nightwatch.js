@@ -14,25 +14,25 @@ module.exports = {
         on_error: true
     },
     test_settings: {
-        // default: {
-        //     desiredCapabilities: {
-        //         browserName: 'chrome',
-        //         chromeOptions: {
-        //             // args : ["headless", "no-sandbox", "disable-gpu"],
-        //             prefs: {
-        //                 download: {
-        //                     default_directory: require('path').resolve(__dirname + '/download')
-        //                 }
-        //             }
-        //         },
-        //     },
-        //     webdriver: {
-        //         start_process: true,
-        //         port: 9515,
-        //         server_path : "node_modules/chromedriver/bin/chromedriver",
-        //         server_path: require('chromedriver').path,
-        //     }
-        // },
+        default: {
+            desiredCapabilities: {
+                browserName: 'chrome',
+                chromeOptions: {
+                    // args : ["headless", "no-sandbox", "disable-gpu"],
+                    prefs: {
+                        download: {
+                            default_directory: require('path').resolve(__dirname + '/download')
+                        }
+                    }
+                },
+            },
+            webdriver: {
+                start_process: true,
+                port: 9515,
+                server_path : "node_modules/chromedriver/bin/chromedriver",
+                server_path: require('chromedriver').path,
+            }
+        },
 
         test_workers: {
             enabled: true,
