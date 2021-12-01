@@ -1,2 +1,7 @@
 node_modules
 screenshots
+tests_output
+results
+chromedriver.log
+edgedriver.log
+geckodriver.log
