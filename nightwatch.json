@@ -11,7 +11,7 @@
     "default": {
       "launch_url": "http://localhost:3000",
       "selenium_host": "127.0.0.1",
-      "selenium_port": 4444,
+      "selenium_port": 4041,
       "silent": true,
       "disable_colors": false,
       "screenshots": {
@@ -22,11 +22,17 @@
       },
       "desiredCapabilities": {
         "browserName": "chrome",
+        "start_process": true,
         "chromeOptions": {
           "args": [
             "start-fullscreen"
           ]
         }
+      },
+      "webdriver": {
+        "start_process": true,
+        "port": 4041,
+        "server_path": "node_modules/chromedriver/lib/chromedriver/chromedriver"
       }
     },
     "chrome": {
@@ -34,6 +40,7 @@
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
+
       }
     }
   }

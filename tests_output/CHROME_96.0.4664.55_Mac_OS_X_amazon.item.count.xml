@@ -5,15 +5,15 @@
 
   <testsuite name="amazon.item.count"
     errors="2" failures="1" hostname="" id="" package="amazon.item.count" skipped="0"
-    tests="1" time="62.84" timestamp="">
+    tests="1" time="26.14" timestamp="">
   
-    <testcase name="Amazon Search" classname="amazon.item.count" time="62.84" assertions="2">  <failure message="Testing if element &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt; contains text &#39;Books&#39; in 5000ms - expected &#34;contains text &#39;Books&#39;&#34; but got: &#34;element could not be located&#34; (5113ms)">    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)
+    <testcase name="Amazon Search" classname="amazon.item.count" time="26.14" assertions="2">  <failure message="Testing if element &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt; contains text &#39;Books&#39; in 5000ms - expected &#34;contains text &#39;Books&#39;&#34; but got: &#34;element could not be located&#34; (5117ms)">    at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
 
     
 
     
-    <error message="Error while running &#34;containsText&#34; command: Testing if element [0;33m&lt;option[value=&#39;search-alias=stripbooks&#39;]&gt;[0m contains text [0;33m&#39;Books&#39;[0m in 5000ms - expected [0;32m&#34;contains text &#39;Books&#39;&#34;[0m but got: [0;31m&#34;element could not be located&#34;[0m [0;90m(5113ms)[0m" type="error"><![CDATA[
+    <error message="Error while running &#34;containsText&#34; command: Testing if element [0;33m&lt;option[value=&#39;search-alias=stripbooks&#39;]&gt;[0m contains text [0;33m&#39;Books&#39;[0m in 5000ms - expected [0;32m&#34;contains text &#39;Books&#39;&#34;[0m but got: [0;31m&#34;element could not be located&#34;[0m [0;90m(5117ms)[0m" type="error"><![CDATA[
         at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:11:17)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)
     ]]></error>
@@ -24,11 +24,11 @@
   
     <system-err>
         NoSuchElementError: An error occurred while running .click() command on &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt;: 
-   {&#34;sessionId&#34;:&#34;79f4f1514da92653a21010cd0fd32f0e&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+   {&#34;sessionId&#34;:&#34;9f9eada02a5fd365b833846741b308bb&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
        at Object.Amazon Search (/Users/backcountry/Desktop/VSCode/Nightwatch-js/tests/amazon.item.count.js:10:10)
        at processTicksAndRejections (internal/process/task_queues.js:95:5)
   NoSuchElementError: An error occurred while running .getText() command on &lt;option[value=&#39;search-alias=stripbooks&#39;]&gt;: 
-   {&#34;sessionId&#34;:&#34;79f4f1514da92653a21010cd0fd32f0e&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+   {&#34;sessionId&#34;:&#34;9f9eada02a5fd365b833846741b308bb&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
        at processTicksAndRejections (internal/process/task_queues.js:95:5)
     </system-err>
   
