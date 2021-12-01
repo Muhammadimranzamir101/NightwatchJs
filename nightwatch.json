@@ -23,9 +23,8 @@
         "browserName": "chrome",
         "start_process": true,
         "chromeOptions": {
-          "args": [
-            "start-fullscreen"
-          ]
+          "args": ["--headless", "--no-sandbox", "--disable-gpu"],
+          "w3c": false
         }
       },
       "webdriver": {
