@@ -2,8 +2,10 @@ pipeline {
     agent any
     stages{
         stage ('build'){
-            checkout scm
+            steps{
+                checkout scm
             sh 'npm install' // <1>
+            }   
         }
         stage('chrome'){
             steps{
