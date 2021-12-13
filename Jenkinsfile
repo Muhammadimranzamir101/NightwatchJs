@@ -9,12 +9,12 @@ pipeline {
         }
         stage('chrome'){
             steps{
-                sh './node_modules/.bin/nightwatch tests' // <4>
+                sh './node_modules/.bin/nightwatch tests/amazon.item.count.js' // <4>
             }
         }
         stage('firefox'){
              steps{
-                 sh './node_modules/.bin/nightwatch tests -e firefox'
+                 sh './node_modules/.bin/nightwatch tests/amazon.item.count.js -e firefox'
              }
         }
     } 
