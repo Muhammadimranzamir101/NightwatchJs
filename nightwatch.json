@@ -1,3 +1,4 @@
+
 {
   "src_folders": ["tests"],
   "globals_path": "globals/global_module.js",
@@ -32,6 +33,37 @@
         "port": 4041,
         "server_path": "node_modules/chromedriver/lib/chromedriver/chromedriver"
       }
+    },
+
+    "firefox": {
+      "launch_url": "http://localhost:3000",
+      "selenium_host": "127.0.0.1",
+      "selenium_port": 4041,
+      "silent": true,
+      "disable_colors": false,
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "on_error": true,
+        "path": "./screenshots"
+      },
+
+      "capabilities": {
+        "alwaysMatch": {
+          "moz:firefoxOptions": {
+            "args": [
+              "--headless"
+            ]
+          }
+        }
+      },
+
+      "webdriver": {
+        "start_process": true,
+        "port": 4041,
+        "server_path": "node_modules/geckodriver/geckodriver"
+      }
     }
   }
 }
+
