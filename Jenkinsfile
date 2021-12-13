@@ -3,5 +3,8 @@ node {
     checkout scm
     sh 'npm install' // <1>
     stage "Test Chrome Headless"
-        sh './node_modules/.bin/nightwatch tests' // <4>
+    steps{
+            sh './node_modules/.bin/nightwatch tests' // <4>
+            sh './node_modules/.bin/nightwatch tests -e firefox'
+    }
 }
