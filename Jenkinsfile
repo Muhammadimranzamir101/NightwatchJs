@@ -1,9 +1,7 @@
 node {
     stage "Build"
     checkout scm
-    steps{
-        sh 'npm install' // <1>
-    }
+    sh 'npm install' // <1>
     stage "Test Chrome Headless"
     steps{
         sh './node_modules/.bin/nightwatch tests' // <4>
