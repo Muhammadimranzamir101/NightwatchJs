@@ -27,7 +27,7 @@ module.exports = {
         // .expect.element('#et_pb_contact_name_0').to.have.attribute('placeholder').which.contains('Name')
 
         client
-        .verify.title('Filling Out Forms - Ultimate QA')
+        //.verify.title('Filling Out Forms - Ultimate QA')
         .verify.attributeContains('#et_pb_contact_name_0','placeholder',"Name")
         .verify.attributeContains('button[name="et_builder_submit_button"]:nth-child(1)','name','et_builder_submit_button')
         .verify.containsText('button[name="et_builder_submit_button"]:nth-child(1)','Submit')
