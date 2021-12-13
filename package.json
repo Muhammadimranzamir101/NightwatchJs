@@ -11,14 +11,21 @@
     "axios": "^0.21.1",
     "cucumber": ">=6.0.5",
     "cucumber-pretty": "^6.0.0",
-    "geckodriver": "^2.0.2",
+    "geckodriver": "^2.0.4",
     "html-dnd": "^1.2.1",
+    "lint": "^0.7.0",
     "nightwatch": "^1.7.8",
     "nightwatch-api": "^3.0.1",
     "selenium-server": "^3.141.59"
   },
   "devDependencies": {
     "chromedriver": "^96.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.27.1",
     "selenium": "^2.20.0",
     "server": "^1.0.35"
   },
