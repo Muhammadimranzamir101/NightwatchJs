@@ -4,7 +4,7 @@ pipeline {
         stage ('build'){
             steps{
                 checkout scm
-            sh 'npm install' // <1>
+                sh 'npm install' // <1>
             }   
         }
         stage('chrome'){
