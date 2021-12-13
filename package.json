@@ -30,7 +30,8 @@
     "server": "^1.0.35"
   },
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch tests"
+    "test-Chrome": "./node_modules/.bin/nightwatch tests",
+    "test-FireFox": "./node_modules/.bin/nightwatch tests -e firefox"
   },
   "author": "",
   "license": "ISC"
